@@ -1,0 +1,259 @@
+:root {
+  --main-color: #464e90;
+  --second-color: #ff3946;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "work Sans ,sans-serif";
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*small*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/*medium*/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*large*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.header {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.header .logo img {
+  width: 80px;
+  float: left;
+  margin-top: 10px;
+}
+.header .links ul {
+  float: right;
+  margin-top: 10px;
+}
+.header .links ul li {
+  display: inline-block;
+  margin: 10px;
+}
+.header .links ul li a {
+  list-style: none;
+  color: var(--main-color);
+  font-size: 20px;
+}
+.landing {
+  padding: 50px;
+  margin: 50px;
+}
+.landing .container {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.landing .text {
+  margin-top: 30px;
+  text-align: center;
+  flex-basis: calc(100% - 500px);
+}
+.landing .text h3 {
+  color: var(--main-color);
+  font-size: 60px;
+}
+.landing .text p {
+  color: #777;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.landing .text button {
+  color: #fff;
+  background-color: var(--second-color);
+  font-size:16px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 50px;
+}
+.landing .text button + p {
+  color: var(--main-color);
+  display: inline-block;
+  margin-left: 30px;
+}
+.landing .image {
+  position: relative;
+}
+.landing .image img {
+  width: 400px;
+  text-align: center;
+}
+.services {
+  padding: 50px;
+  margin: 50px;
+}
+.services .service-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin: 30px;
+}
+
+.services .col .text {
+  text-align: left;
+}
+.services .col .text h3 {
+  color: var(--main-color);
+  font-size: 32px;
+}
+.services .text button {
+  color: #fff;
+  background-color: var(--second-color);
+  font-size:12px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+.services .serv {
+  padding: 20px;
+  box-shadow: 5px 5px 2px rgb(241, 240, 240);
+}
+.services .serv li {
+  color: var(--main-color);
+}
+.services .serv h5 {
+  color: var(--main-color);
+  font-size: 24px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.services .serv p {
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.about {
+  padding: 30px;
+  margin: 30px;
+}
+.about .about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 30px;
+}
+.about .image img {
+  width: 300px;
+}
+.about .text {
+  margin-top: 30px;
+  text-align: left;
+}
+.about .text p {
+  color: var(--second-color);
+  font-size: 16px;
+}
+.about .text h4 {
+  color: var(--main-color);
+  font-size: 40px;
+  margin-top: 5px;
+}
+.about .text h4 + p {
+  color: var(--main-color);
+  font-size: 16px;
+}
+.blog {
+  padding: 50px;
+  margin: 50px;
+}
+.blog h3 {
+  color: var(--main-color);
+  font-size: 32px;
+  float: center;
+}
+.blog .blog-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+.blog .col {
+  color: var(--main-color);
+  padding: 20px;
+  box-shadow: 5px 5px 2px rgb(241, 240, 240);
+}
+.blog .col h6 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.blog .col h6 + p {
+  color: #777;
+}
+.blog .col:hover {
+  color: #fff;
+  background-color: var(--second-color);
+}
+.contact {
+  padding: 50px;
+  margin: 50px;
+}
+.contact h3 {
+  color: var(--main-color);
+  font-size: 32px;
+  float: center;
+}
+
+.contact .form .row input {
+  width: 40%;
+  display: inline-block;
+  height: 40px;
+  background-color: #f4fafe;
+  border: none;
+}
+.contact .form textarea {
+  width: 80%;
+  margin-top: 30px;
+  background-color: #f4fafe;
+  border: none;
+}
+.contact .form .row input::placeholder,
+.contact .form textarea::placeholder {
+  color: var(--main-color);
+}
+.contact .form button{
+  color: #fff;
+  background-color: var(--second-color);
+  font-size:12px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+.footer{
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--main-color);
+}
+.footer .foot-content{
+  
+  text-align: center;
+}
+.footer p{
+  font-size: 14px;
+  color: #fff;
+}
+.footer h3{
+  font-size: 34px;
+  color: var(--second-color);
+  margin-bottom: 5px;
+}
